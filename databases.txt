@@ -1,0 +1,10 @@
+items and monsters all are put in a database and from there all the data will be retrieved
+by id and then placed in a monster or item container, items are not that important
+and can be referenced in shop and inventory by a id the monsters however need a temporary 
+storage container for fights and such.
+
+inv	1234567890-|
+db 	1234567890-|____struct obj<name,dscription>
+
+a options for th two databases are a global database containing monsters and items and they
+all hav a type of some sort.

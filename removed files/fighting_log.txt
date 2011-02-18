@@ -1,0 +1,289 @@
+wfwef wefwefw 0
+sefsf sefef 1
+wfwef wefwefw 2
+wfwef wefwefw 3
+wfwef wefwefw 4
+wfwef wefwefw 5
+wfwef wefwefw 6
+wfwef wefwefw 7
+wfwef wefwefw 8
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Starting player defence 13
+After inventory player defence 16
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Starting player defence 16
+After inventory player defence 19
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player misses monster
+Starting player defence 19
+After inventory player defence 22
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Starting player defence 22
+After inventory player defence 25
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Starting player defence 25
+After inventory player defence 28
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Starting player defence 28
+After inventory player defence 31
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Starting player defence 31
+After inventory player defence 34
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Starting player defence 34
+After inventory player defence 37
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Starting player defence 37
+After inventory player defence 40
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Starting player defence 40
+After inventory player defence 43
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 13
+After inventory player defence 16
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 13
+After inventory player defence 16
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player misses monster
+Starting player defence 16
+After inventory player defence 19
+Neither player nor monster is dead...
+Monster misses player
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 13
+After inventory player defence 16
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 16
+After inventory player defence 19
+Neither player nor monster is dead...
+Monster misses player
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 13
+After inventory player defence 16
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 16
+After inventory player defence 19
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 13
+After inventory player defence 16
+Neither player nor monster is dead...
+Monster misses player
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 16
+After inventory player defence 19
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 19
+After inventory player defence 22
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 13
+After inventory player defence 16
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 16
+After inventory player defence 19
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player misses monster
+Starting player defence 19
+After inventory player defence 22
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 22
+After inventory player defence 25
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 25
+After inventory player defence 28
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 13
+After inventory player defence 16
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 16
+After inventory player defence 19
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player misses monster
+Starting player defence 13
+After inventory player defence 16
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...
+Starting player defence 10
+After inventory player defence 13
+Neither player nor monster is dead...
+Monster hit player for 10 point of damage
+Player hit monster for 10 point of damage
+Monster died...

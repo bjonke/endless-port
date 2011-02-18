@@ -1,0 +1,112 @@
+Aberrant spectre,96,Yes,9,480,96
+Abyssal demon, 124 ,Yes ,150, 800,124 
+Abyssal guardian, 59, Yes, 50, 266,59 
+Abyssal leech ,41, Yes ,10 ,53 ,41
+Abyssal walker, 81, Yes, 96, 512,81 
+Afflicted (ones), 30 ,Yes, 24, 128 ,30 
+Ahrim the Blighted, 98, Yes ,105 ,560 ,98 
+Air Elemental ,34 ,Yes ,30 ,160 ,34
+Air wizard ,13, No ,25 ,133 ,13
+Al-Kharid warrior, 9 ,No ,19 ,101 ,9 
+Albino bat ,52 ,Yes ,33 ,176,52 
+Alomone ,13 ,Yes ,25 ,133 ,13 
+Alrik ,1 ,Yes, 1 ,5 ,1
+Angry bear (level 40), 40 ,Yes, 200, 1066,40
+Angry bear (level 47) ,47 ,Yes ,50 ,266 ,47
+Angry giant rat (level 45), 45 ,Yes, 200, 1066,45 
+Angry giant rat (level 47), 45 ,Yes ,50, 266 ,47
+Angry goblin (level 45) ,45 ,Yes ,200, 1066, 45
+Angry goblin (level 47) ,47 ,Yes, 50, 266 ,47
+Angry unicorn (level 45), 45, Yes ,200, 1066 ,45 
+Angry Unicorn (level 47) ,47 ,Yes, 50 ,266 ,47 
+Animated Adamant Armour, 113, Yes, 100, 533,113 
+Animated Black Armour ,69, Yes, 60, 320 ,69 
+Animated Bronze Armour ,11 ,Yes, 10 ,53 ,11 
+Animated Iron Armour ,23, Yes, 20 ,106,23 
+Animated Mithril Armour, 92 ,Yes ,80, 426,92 
+Animated Rune Armour ,138 ,Yes ,118 ,629 ,138
+Animated spade, 50, Yes, 40 ,213 ,50 
+Animated Steel Armour ,46 ,Yes ,40 ,213,46 
+Anja ,2 ,No ,7 ,37 ,2
+Ankou (level 75) ,75 ,No ,60 ,320 ,75 
+Ankou (level 82) ,82 ,No ,65 ,346 ,82 
+Ankou (level 86) ,86 ,No ,70 ,373,86 
+Aquanite ,114, Yes, 125, 666,114 
+Archer ,42 ,Yes ,68, 362,42 
+Armoured zombie, 85 ,Yes, 88 ,469,85 
+Arrg, 171 ,Yes ,139, 741,171
+Arzinian Avatar of Magic, 125 ,Yes ,0 ,0,125
+Ashild, 1 ,Yes, 1, 5 ,1
+Asyn shade ,100, Yes, 90, 480,100 
+Asyn shadow ,110, Yes ,94 ,501,110
+Autumn Elemental, 0, Yes, 0 ,0 ,0
+Avatar of Creation ,525 ,Yes, 1000, 5333,525 
+Avatar of Destruction, 525, Yes, 1000 ,5333,525 
+Aviansie (level 131), 131 ,Yes ,0 ,0 ,131
+Aviansie (level 137), 137 ,Yes ,124 ,661,137 
+Aviansie (level 148), 148 ,Yes, 137, 730,148
+Aviansie (level 69), 69, Yes, 70 ,373,69
+Aviansie (level 71), 71 ,Yes, 63 ,336,71
+Aviansie (level 73), 73, Yes, 67, 357,73
+Aviansie (level 79), 79, Yes, 83, 442,79
+Aviansie (level 83), 83, Yes, 86, 458,83
+Aviansie (level 89), 89, Yes, 69, 368,89
+Aviansie (level 92), 92, Yes, 95, 506,92
+Aviansie (level 94), 94, Yes, 75, 400,94
+Aboleth, 0, Yes, 0 ,0 ,0
+Air Elemental, 0, Yes, 0 ,0 ,0
+Alligator, 0, Yes, 0 ,0 ,0
+Altering Beast, 0, Yes, 0 ,0 ,0
+Ancient Guardian, 0, Yes, 0 ,0 ,0
+Angel of Death, 0, Yes, 0 ,0 ,0
+Ant, 0, Yes, 0 ,0 ,0
+Apparitionist, 0, Yes, 0 ,0 ,0
+Arch-Fiend, 0, Yes, 0 ,0 ,0
+Arthropod, 0, Yes, 0 ,0 ,0
+Asmodeus, 0, Yes, 0 ,0 ,0
+Asp, 0, Yes, 0 ,0 ,0
+Assassin, 0, Yes, 0 ,0 ,0
+Asteryex, 0, Yes, 0 ,0 ,0
+Astral Demon,0, Yes, 0 ,0 ,0
+Banshee, 0, Yes, 0 ,0 ,0
+Barbarian,0, Yes, 0 ,0 ,0
+Beechi,0, Yes, 0 ,0 ,0
+Black Bear,0, Yes, 0 ,0 ,0
+Black Eel,0, Yes, 0 ,0 ,0
+Black Gremlin,0, Yes, 0 ,0 ,0
+Black Grengi,0, Yes, 0 ,0 ,0
+Black Mist,0, Yes, 0 ,0 ,0
+Black Pelagon,0, Yes, 0 ,0 ,0
+Black Wolf,0, Yes, 0 ,0 ,0
+Black Yundrun,0, Yes, 0 ,0 ,0
+Blue Gremlin,0, Yes, 0 ,0 ,0
+Blue Pelagon,0, Yes, 0 ,0 ,0
+Blue Slime, 0, Yes, 0 ,0 ,0
+Brigand, 0, Yes, 0 ,0 ,0
+Brown Bear, 0, Yes, 0 ,0 ,0
+Brown Tyke, 0, Yes, 0 ,0 ,0
+Bull Snake, 0, Yes, 0 ,0 ,0
+Burgler, 0, Yes, 0 ,0 ,0
+Burrow, 0, Yes, 0 ,0 ,0
+Bushart, 0, Yes, 0 ,0 ,0
+Bushido, 0, Yes, 0 ,0 ,0
+Butcher0, Yes, 0 ,0 ,0
+Cannibal,0, Yes, 0 ,0 ,0
+Carrion Crawler,0, Yes, 0 ,0 ,0
+Cave Bear, 0, Yes, 0 ,0 ,0
+Centaur,0, Yes, 0 ,0 ,0
+Champion, 0, Yes, 0 ,0 ,0
+Charmer,0, Yes, 0 ,0 ,0
+Charon, 0, Yes, 0 ,0 ,0
+Clean-Up, 0, Yes, 0 ,0 ,0
+Cockatrice, 0, Yes, 0 ,0 ,0
+Coltpixie, 0, Yes, 0 ,0 ,0
+Conjurer, 0, Yes, 0 ,0 ,0
+Corpser, 0, Yes, 0 ,0 ,0
+Courrier, 0, Yes, 0 ,0 ,0
+Coutal, 0, Yes, 0 ,0 ,0
+Crystal Spider, 0, Yes, 0 ,0 ,0
+Cutpurse, 0, Yes, 0 ,0 ,0
+Cutthroat, 0, Yes, 0 ,0 ,0
+Cyclops, 0, Yes, 0 ,0 ,0
+NAME,COMBAT LEVEL,MEMBERS ONLY,HITPOINTS,XP,KILL XP

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="stylesheet.xsl" ?>
+
+<!-- Created by XMLLogger -->
+
+<Project>
+	<Name>XMLlogger</Name>
+	<Type>Project</Type>
+	<FileName>p:\forgotten-dreams-export\misc\main.cpp</FileName>
+	<Compiled>Feb 18 2011 07:57:01</Compiled>
+	<CommentLines>
+		<CommentLine>This is the programs entry point</CommentLine>
+		<CommentLine>of multiple lines</CommentLine>
+	</CommentLines>
+	<LogEntries>
+		<LogEntry>
+			<ClassName>Main</ClassName>
+			<FuncName>main</FuncName>
+			<DebugType>Info</DebugType>
+			<Timestamp>Fri Feb 18 07:57:08 2011
+</Timestamp>
+			<Info>Starting up</Info>
+			<Line>113</Line>
+			<File>p:\forgotten-dreams-export\misc\main.cpp</File>
+		</LogEntry>
+		<LogEntry>
+			<ClassName>Main</ClassName>
+			<FuncName>main</FuncName>
+			<DebugType>Info</DebugType>
+			<Timestamp>Fri Feb 18 07:57:08 2011
+</Timestamp>
+			<Info>RegisterClass initialized...</Info>
+			<Line>148</Line>
+			<File>p:\forgotten-dreams-export\misc\main.cpp</File>
+		</LogEntry>
+	</LogEntries>
+</Project>

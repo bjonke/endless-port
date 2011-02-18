@@ -1,0 +1,4 @@
+I've created a couple of different RPG inventory systems. I'd recommend that you have an ItemSlot class that holds one item. You can subclass this ItemSlot if you want an ItemSlot to have specific behaviour. You can also make it so an ItemSlot only accepts Items of certain types.
+
+Then in your Item class you can hold a pointer to ItemSlot that owns the Item. This is particularly useful when you want to mount weapons or armour. When you attach an Item to an ItemSlot the ItemSlot can call one or more callback methods that update the inventory interface as well as the visibly displayed 3D models.
+

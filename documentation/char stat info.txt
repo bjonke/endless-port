@@ -1,0 +1,46 @@
+Xhar stat info
+
+kills
+charmed
+died
+comp
+money quests
+item quests
+guild a/d
+stats a/d
+item a/d
+time(current)
+date(current)
+play time
+created on
+total gold
+total experience
+stats(with mods and without)
+
+
+guild info
+
+guilds joined and level
+
+total skills
+current guild
+guild abilites
+
+thieving
+perception
+language
+
+
+area look
+
+shows the number of players currently in the area you are currently standing
+
+
+buffers
+
+shows 10 quickslots for buffs and what buff is choose for the slot
+
+
+misc info
+
+empty

@@ -1,0 +1,134 @@
+acid dart,2,This Evocation of Water hurls a glob of potent acid at a foe.,physical,60,1,2
+berserk,4,This Enchantment of Fire and Mind drives the caster into a berserk rage. This makes the caster more dangerous in combat but makes it difficult to cast other spells. While berserk the caster is impervious to pain. ,physical ,60,1,2
+bless,7,This Enchantment of Life blesses the specified object or removes a curse from it if cursed.,physical ,60,1,2
+blink,1,This Incantation of Spirit teleports the caster to a random location a few feet away.,physical,60,1,2
+blizzard,4,This Evocation of Water creates a blast of snow that does cold damage to everything in its path.,physical ,60,1,2
+blood dart,1,This Evocation of Death hurls a glob of unholy blood at a foe.,physical,60,1,2
+bravery,1,This Enchantment of Life and Mind gives the caster temporary resistance to fear.,physical,60,1,2
+charging,4,This Incantation of Spirit attempts to bestow additional charges on a magical item.,physical,60,1,2
+charm monster,4,This Enchantment of Mind allows the caster to control a monster by giving it commands.,physical,60,1,2
+confuse monster,1,This Enchantment of Mind confuses a single monster.,physical,60,1,2
+confusion,3,This Evocation of Mind creates a wide cone of confusion.,physical,60,1,2
+continual light,5,This Conjuration of Life creates a permanent light source at the caster's current location.,physical,60,1,2
+create earth wall,3,This Conjuration of Earth creates a diggable wall of earth that can block monsters.,physical,60,1,2
+create food,1,This Conjuration of Life creates some food.,physical,60,1,2
+create lava,7,This Conjuration of Fire and Earth (PK only) creates a pool of lava in front of the caster.,physical,60,1,2
+create pool,7,This Conjuration of Water (PK only) creates a pool of water in front of the caster.,physical,60,1,2
+create trap,3,This Conjuration of Death and Mind (PK only) creates a random trap in front of the caster.,physical,60,1,2
+cure blindness,2,This Incantation of Life cures a target of blindness.,physical,60,1,2
+cure poison,3,This Incantation of Life cures a target of poisoning.,physical,60,1,2
+curse,4,This Incantation of Death curses an object.,physical,60,1,2
+darkness,6,This Conjuration of Death surrounds the caster with a cloud of darkness.,physical,60,1,2
+darksight,4,This Enchantment of Air and Mind allows the caster to see in the dark. ,physical,60,1,2
+death ray,14,This Evocation of Death produces a bolt that kills all living things in its path. ,physical,60,1,2
+destroy armor,2,This Incantation of Earth and Death damages or destroys a piece of armor the caster is wearing. ,physical,60,1,2
+destroy object,4,This Incantation of Earth and Death disintegrates a selected object in the caster's inventory. ,physical,60,1,2
+destruction,9,This Incantation of Death and Spirit does magical damage to every monster in the caster's area. ,physical,60,1,2
+dig,1,This Evocation of Earth and Death fires a beam that disintegrates loose earth. ,physical,60,1,2
+dispel confusion,1,This Incantation of Life and Mind cures a target of confusion. ,physical,60,1,2
+dispel fear,1,This Incantation of Life and Mind cures a target of fear. ,physical,60,1,2
+dispel paralysis,1,This Incantation of Air and Life un-freezes a paralyzed target. ,physical,60,1,2
+dispel slow,1,This Incantation of Air and Life speeds up a slowed target. ,physical,60,1,2
+dragon breath,13,This Evocation of Fire and Death hurls a cone of fiery dragon breath from the caster's fingertips. 	,physical ,60,1,2
+enchant armor,6,This Enchantment of Earth and Spirit magically enchants a piece of armor to provide more protection. ,physical ,60,1,2
+enchant weapon,6,This Enchantment of Earth and Spirit magically enchants a weapon to do additional magical damage. ,physical,60 ,1,2
+enlarge armor,4,This Incantation of Earth causes a specific piece of armor to grow to a larger size. The effect is permanent, but does damage the armor.,pixie dust ,60,1,2
+enlightenment,9,This Incantation of Mind gives the caster detailed information on his or her abilities.,none ,60,1,2
+excavation,6,This Evocation of Earth and Death hurls a wide beam that disintegrates loose earth.,salt ,60,1,2
+fear,2,This Evocation of Mind creates a cone of fear that will send monsters stampeding.,none ,60,1,2
+find traps,3,This Incantation of Life and Mind detects any traps adjacent to the caster., none ,60,1,2
+fireball,4,This Evocation of Fire shoots a small ball from the caster's fingertips that explodes in a storm of fire on contact with something solid. 											,none ,60,1,2
+firebolt,3,This Evocation of Fire hurls a thin stream of flame from the caster's fingertips.,none,60,1,2
+firefrost,4,This Evocation of Fire and Water creates a bouncing swirl of fire and ice. ,none,60,1,2
+firespray,6,This Evocation of Fire hurls a wide cone of flame from the caster's fingertips.,sulfur,60,1,2
+firewall,3,This Conjuration of Fire creates a wall of fire in front of the caster. ,sulfur,60,1,2
+flame blade,3,This Enchantment of Fire causes the selected weapon to burst into flame for a period of time. Some of the energy invested in this spell cannot be recovered until the spell wears off. When the spell ends the weapon may be damaged or destroyed by the dying flames.,physical,60,1,2
+flame shield,6,This Conjuration of Fire creates a ring of flames around the caster.,physical,60,1,2
+fly,5,This Enchantment of Air enables the caster to fly.,pixie dust,60,1,2
+forestry,1,This Enchantment of Earth and Life enables the caster to travel through forests at great speed.,none,60,1,2
+fortress,5,This Conjuration of Earth surrounds the caster with an impregnable magical barrier.,rock,60,1,2
+free action,5,This Enchantment of Life and Mind gives the caster virtual immunity to slow and paralysis.,none,60,1,2
+frost blade,4,This Enchantment of Water surrounds the selected weapon with an aura of intense cold. This freezes your foes but renders the weapon more fragile. Some of the energy invested in this spell cannot be recovered until the enchantment is dispelled.,none,60,1,2
+frost ward,6,This Conjuration of Water creates a shield of bitter cold around the caster.,physical ,60,1,2
+frost wave,4,This Evocation of Water throws out a wave of freezing cold in all directions.,physical ,60,1,2
+glimpse,2,This Enchantment of Mind gives casters a glimpse of their true surroundings, ignoring all barriers.,physical,60,1,2
+heal,10,This Incantation of Life heals greater wounds on the target or caster.,physical,60,1,2
+icestorm,6,This Evocation of Water hurls a wide cone of frost from the caster's fingertips.,physical ,60,1,2
+identify,8,This Incantation of Mind identifies one or more items in the caster's inventory.,pixie dust ,60,1,2
+illusionary wall,1,This Conjuration of Spirit creates a wall you can see but can also pass through.,none ,60,1,2
+imprison,8,This Conjuration of Earth surrounds a targeted monster with a strong earth wall.,a stone,60,1,2
+invisibility,7,This Enchantment of Air makes the caster temporarily invisible to others.,pixie dust,60,1,2
+join player,8,This Incantation of Air teleports the caster to the location of another player.,bat wing,60,1,2
+knock,1,This Incantation of Mind attempts to magically unlock a lock.,none,60,1,2
+know alignment,2,This Incantation of Mind tells the caster the target's alignment.,none,60,1,2
+life blade,1,This Enchantment of Life causes the selected weapon to inflict extra damage on undead for a brief period of time. The energy invested in this spell cannot be recovered until the spell ends.,none ,60,1,2
+light,1,This Conjuration of Life surrounds the caster with a field of light.,none,60,1,2
+lightning bolt,4,This Evocation of Air fires a long stream of electricity at your foes.,none ,60,1,2
+lightning shield,6,This Conjuration of Air creates a shield of crackling electricity around the caster.,pixie dust: sparkweed,60,1,2
+magic dart,1,This Evocation of Spirit hurls a dart of magical energy at a foe.,none,60,1,2
+magic map,10,This Incantation of Air and Mind creates a magical engraving of the caster's current map.,phoenix feather: map,60,1,2
+magic mine,8,This Conjuration of Earth and Death plants a magic mine in the earth below the caster. It will automatically detonate after 15 seconds or when stepped on, magically damaging anything in its radius.,sparkweed: graveyard dirt ,60,1,2
+magic mouth,1,This Conjuration of Mind creates a message players will hear when they walk across it.,none ,60,1,2
+magic whip,1,This Conjuration of Air and Death creates a weightless magic weapon for the caster.,none ,60,1,2
+major healing,5,This Incantation of Life heals major wounds on the target or caster.,none ,60,1,2
+mana shield,3,This Enchantment of Spirit causes the caster to absorb physical damage with mana points.,none ,60,1,2
+medium healing,3,This Incantation of Life heals medium wounds on the target or caster.,none ,60,1,2
+minor healing,1,This Incantation of Life heals minor wounds on the target or caster.,none ,60,1,2
+pacify,6,This Enchantment of Life and Mind makes an aggressive/hostile monster stop attacking.,none ,60,1,2
+paralysis,4,This Evocation of Mind sends a cone of paralysis from the caster's fingertips.,none ,60,1,2
+paralyze,2,This Incantation of Mind temporarily paralyzes a single target.,none ,60,1,2
+petrify,10,This Evocation of Earth and Death turns monsters to stone, permanently.,nightshade berries: belladonna ,60,1,2
+poison,2,This Enchantment of Death poisons the target.,none ,60,1,2
+poison breath,5,This Evocation of Death creates a wide cone of poisonous gas.,none ,60,1,2
+poison cloud,4,This Evocation of Death creates a wide cone of poisonous gas.,none,60,1,2
+prismatic shield,11,This Conjuration of Fire Water Air and creates a devastating shield of multiple energies around the caster.,pixie dust: sparkweed: sulfur: salt,60,1,2
+recall,5,This Conjuration of Spirit sets a recall point that the caster can return to.,none,60,1,2
+regeneration,2,This Enchantment of Life increases the caster's hit-point regeneration rate.,none,60,1,2
+remove curse,5,This Incantation of Life and Spirit lifts the curse from a cursed object.,pixie dust,60,1,2
+remove damnation,9,This Incantation of Life and Spirit lifts the damnation from a Damned object.,pixie dust: powdered dragon bone,60,1,2
+repair,4,This Incantation of Earth and Life partially repairs a weapon or piece of armor. Each casting permanently weakens the item being repaired.,physical,60,1,2
+resist cold,1,This Enchantment of Water and Life gives the caster temporary resistance to cold and frost.,none,60,1,2
+resist curse,4,This Enchantment of Life and Spirit gives the caster temporary resistance to being cursed.,none,60,1,2
+resist fire,1,This Enchantment of Fire and Life gives the caster temporary resistance to heat and flame.,none,60,1,2
+resist magic,2,This Enchantment of Life and Spirit gives the caster temporary magic resistance.,none,60,1,2
+resist paralysis,1,This Enchantment of Life and Mind gives the caster temporary resistance to paralysis.,none,60,1,2
+resist petrify,3,This Enchantment of Earth and Life gives the caster temporary petrification resistance.,none,60,1,2
+resist shock,1,This Enchantment of Air and Life gives the caster temporary resistance to electricity.,none,60,1,2
+restoration,12,This Incantation of Life restores experience drained by life-draining creatures. It will only restore that portion that has not been recovered by other means.,none,60,1,2
+resurrection,25,This Incantation of Life restores some of the experience lost to the Grim Reaper. The spell must be cast upon the gravestone of the deceased.,phoenix feather,60,1,2
+sandstorm,2,This Evocation of Earth and Air fires a stream of swirling sand that can badly injure unarmored foes.,none,60,1,2
+satiety,6,This Incantation of Earth and Spirit fills the caster up.,none,60,1,2
+scare monster,1,This Incantation of Mind makes the specified monster run around in terror.,none,60,1,2
+scrying,8,This Enchantment of Mind allows you to view another player in the game.,belladonna,60,1,2
+see invisible,1,This Enchantment of Air and Mind allows the caster to see invisible things.,none,60,1,2
+shrink armor,2,This Incantation of Air causes a specific piece of armor to shrink to a smaller size. The effect is permanent but does damage the armor.,pixie dust,60,1,2
+slow,3,This Evocation of Earth sends a cone of slow-monster in the specified direction.,none,60,1,2
+slow poison,1,This Enchantment of Life slows the rate at which poison does damage to the target.,none,60,1,2
+speed,3,This Enchantment of Air increases the caster's movement speed.,none,60,1,2
+spirit spy,4,This Incantation of Spirit peers into the target's soul to show the caster an idea of who they really are.,eye of newt,60,1,2
+static blade,2,This Enchantment of Air causes the selected weapon to release a large jolt of electrical energy on the next target struck. The energy invested in this spell cannot be recovered until the static blade is discharged.,none,60,1,2
+stonewind,17,This Evocation of Earth and Death spreads a terrifying Medusa's Gaze before the caster.,root: nightshade berries: belladonna: pile of ashes,60,1,2
+strength,3,This Enchantment of Earth and Life temporarily increases the caster's strength.,none,60,1,2
+summon air elemental,6,This Conjuration of Air summons an air elemental to fight for the caster.,physical,60,1,2
+summon animal,3,This Conjuration of Life summons an animal to fight for the caster.,physical,60,1,2
+summon demon,6,This Conjuration of Fire and Death summons a demon to fight for the caster.,physical,60,1,2
+summon earth elemental,6,This Conjuration of Earth summons an earth elemental to fight for the caster.,physical,60,1,2
+summon elemental,5,This Conjuration of Spirit summons a random elemental to fight for the caster.,physical,60,1,2
+summon fire elemental,6,This Conjuration of Fire summons a fire elemental to fight for the caster.,physical,60,1,2
+summon golem,6,This Conjuration of Earth summons a golem to fight for the caster.,physical,60,1,2
+summon insect,4,This Conjuration of Life summons an insect to fight for the caster.,physical,60,1,2
+summon monster,3,This Conjuration of Life summons a monster to fight for the caster.,physical,60,1,2
+summon player,10,This Incantation of Spirit teleports a player to the caster's location.,physical,60,1,2
+summon undead,6,This Conjuration of Death summons an undead creature to fight for the caster.,physical,60,1,2
+summon water elemental,6,This Conjuration of Water summons a water elemental to fight for the caster.,physical,60,1,2
+teleport,4,This Incantation of Spirit teleports the caster to a random location in the current map.,physical,60,1,2
+thunderbolt,1,This Evocation of Air hurls an electric charge at a foe.,physical,60,1,2
+thunderstorm,13,This Evocation of Air calls forth from the skies the powerful force of lightning and channels it in whatever direction the caster desires.,physical,60,1,2
+vampire blade,5,This Enchantment of Death causes the selected weapon to drain life from the foes it strikes healing the wielder. Part of the energy invested in this spell cannot be recovered until the spell wears off.,physical,60,1,2
+water breathing,4,This Enchantment of Water and Air allows the caster to breathe under water.,physical,60,1,2
+water walk,2,This Enchantment of Water allows the caster to walk on water.,physical ,60,1,2
+wizard eye,2,This Conjuration of Spirit produces an 'eye' the caster can move around for viewing areas without being physically present.,physical,60,1,2
+wizard lock,1,This Conjuration of Earth magically locks a door or chest.,physical,60,1,2
+word of recall,7,This Incantation of Spirit teleports the caster back to the nearest chapel.,physical,60,1,2
+xray,6,This Enchantment of Air and Spirit allows the caster to see through walls.,physical,60,1,2
+SPELL, LORE, DESCRIPTION, REAGENTS, TYPE, DURATION, MANA, LEVEL

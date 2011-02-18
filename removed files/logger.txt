@@ -1,0 +1,2 @@
+Item file: item_list.txt
+swordaxebowhalberdstaff

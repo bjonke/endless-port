@@ -1,0 +1,51 @@
+Health potion +30,30,Heals the character,HP_REPLENISH,30
+Health potion 2 +50,50,Heals the character,HP_REPLENISH,50
+Health potion 3 +100,100,Heals the character,HP_REPLENISH,100
+Mana potion 2 +50,50,Replenish mana,MP_REPLENISH,50
+Mana potion 3 +100,100,Replenish mana,MP_REPLENISH,100
+Mana potion 4 +200,200,Replenish mana,MP_REPLENISH,200
+Steel Helmet,4,+4 Armor,DEFENCE,4
+Roman Helmet,8,+8 Defence,DEFENCE,8
+Elven Helmet,12,+12 Defence,DEFENCE,12
+Viking Helmet,16,+16 Defence,DEFENCE,16
+Bag,20,Extra item slots,SLOTS,20
+Pope Crown,24,+24 Defence,DEFENCE,24
+Kings Crown,44,+44 Defence,DEFENCE,44
+Jester Crown,4,+4 Defence,DEFENCE,4
+SKull Helmet,8,+8 Defence,DEFENCE,8
+Full Helmet,12,+12 Defence,DEFENCE,12
+Short sword,16,+16 damage,ATTACK,16
+Long sword,20,+20 damage,ATTACK,20
+Twohanded sword,24,+24 damage,ATTACK,24
+Moon staff,44,+44 damage,ATTACK,44
+Pitchforker,4,+4 damage,ATTACK,4
+Short bow,4,+4 damage,ATTACK,4
+Flail,8,+8 damage,ATTACK,8
+Throwing axe,12,+12 damage,ATTACK,12
+Helm of dawn,16,+16 Defence,DEFENCE,16
+Raider helm,20,+20 Defence,DEFENCE,20
+Golden platemail,24,+24 Defence,DEFENCE,24
+Blue platemail,44,+44 Defence,DEFENCE,44
+Green goblin platemail,44,+44 Defence,DEFENCE,44
+Plate of doom,44,+44 Defence,DEFENCE,44
+Soldier platemail,44,+44 Defence,DEFENCE,44
+Star necklace,44,+44 Defence,DEFENCE,44
+Golden necklace,44,+44 Defence,DEFENCE,44
+Necklace of fire,44,+44 Defence,DEFENCE,44
+Red helmet,44,+44 defence,DEFENCE,44
+Goat helmet,44,+44 defence,DEFENCE,44
+Ring of health,44,+44 defence,DEFENCE,44
+Ring of mana,44,+44 defence,DEFENCE,44
+Ring of fire,44,+44 damage,ATTACK,44
+Golden crest shield,44,+44 defence,DEFENCE,44
+Purple shield,44,+44 defence,DEFENCE,44
+Banner of war,44,+44 damage,ATTACK,44
+Tower token,44,+44 damage,ATTACK,44
+Skull of war,44,+44 damage,ATTACK,44
+Wall,44,+44 defence,DEFENCE,44
+Gate,44,+44 damage,ATTACK,44
+Shield of order,44,+44 defence,DEFENCE,44
+Shield of the stars,44,+44 defence,DEFENCE,44
+Shield of sadman,44,+44 defence,DEFENCE,44
+Purple cloak of vigor,44,+44 defence,DEFENCE,44
+NAME, COST, DESCRIPTION,TYPE,RESULT

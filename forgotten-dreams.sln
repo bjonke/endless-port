@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "forgotten-dreams", "moveable.vcproj", "{9B87325C-FE57-445B-B12F-2912A94DC68E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Network", "Network\Network\Network.vcproj", "{2DCF420B-9D5E-41AE-A99C-796FD23B670A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B87325C-FE57-445B-B12F-2912A94DC68E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9B87325C-FE57-445B-B12F-2912A94DC68E}.Debug|Win32.Build.0 = Debug|Win32
+		{9B87325C-FE57-445B-B12F-2912A94DC68E}.Release|Win32.ActiveCfg = Release|Win32
+		{9B87325C-FE57-445B-B12F-2912A94DC68E}.Release|Win32.Build.0 = Release|Win32
+		{2DCF420B-9D5E-41AE-A99C-796FD23B670A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2DCF420B-9D5E-41AE-A99C-796FD23B670A}.Debug|Win32.Build.0 = Debug|Win32
+		{2DCF420B-9D5E-41AE-A99C-796FD23B670A}.Release|Win32.ActiveCfg = Release|Win32
+		{2DCF420B-9D5E-41AE-A99C-796FD23B670A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
