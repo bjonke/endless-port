@@ -8,7 +8,6 @@
 #include "../misc/main.h"
 #include "../graphics/CGraphics.h"
 #include "../misc/macros.h"
-#include "../inputbox/InputBox.h"
 
 #include <urlmon.h> //Must add the urlmon.h to project or URLDownloadToFile will not work.
 

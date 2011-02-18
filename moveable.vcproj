@@ -212,10 +212,6 @@
 			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 			>
 			<File
-				RelativePath=".\inputbox\InputBox.cpp"
-				>
-			</File>
-			<File
 				RelativePath=".\XMLLogger\Source\XMLLogger.cpp"
 				>
 			</File>

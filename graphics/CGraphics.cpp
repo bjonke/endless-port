@@ -5,7 +5,10 @@
 #include <map>
 #include <strstream>
 #include <crtdbg.h>
+#include <algorithm>
+#include <cctype>
 
+using namespace std;
 #include "../graphics/CGraphics.h"
 #include "../misc/Library.h"
 
@@ -120,10 +123,9 @@ bool CGraphics::Init(HWND hwnd)
 
 	// Writes all the bmp filenames into a file
 	FileData("data/images/*.bmp","data/logs/images.txt" );
-	FileData("data/images/TEXTURES/*.bmp","data/images/TEXTURES/Textures.txt");
 
 	LogHandler.WriteLog("CGraphics", "Init", "Info", "FileData(data/logs/images.txt)", FILE_INFO);
-	LogHandler.WriteLog("CGraphics", "Init", "Info", "FileData(data/images/TEXTURES/Textures.txt)", FILE_INFO);
+
 	// Loades all the data for the tiles
 	fmap.CreateTiles();
 
@@ -133,7 +135,7 @@ bool CGraphics::Init(HWND hwnd)
 	FileManager.FileLoader(Items.m_File,Items.m_Vector,"data/items/items.txt");
 	FileManager.FileLoader(Quests.m_File,Quests.m_Vector,"data/quests/quests.txt");
 	FileManager.FileLoader(Guilds.m_File,Guilds.m_Vector,"data/guilds/guilds.txt");
-	FileManager.FileLoader(Images.m_File,Images.m_Vector,"data/images/images.txt");
+	FileManager.FileLoader(Images.m_File,Images.m_Vector,"data/gfx/images/images.txt");
 	FileManager.FileLoader(Actors.m_File,Actors.m_Vector,"data/actors/actors.txt");
 	FileManager.FileLoader(Monsters.m_File,Monsters.m_Vector,"data/monsters/monsters.txt");
 	FileManager.FileLoader(Gui.m_File,Gui.m_Vector,"data/gui/gui.txt");
@@ -210,7 +212,7 @@ bool CGraphics::Init(HWND hwnd)
 			++CurrentFrame;
 		stringstream ss;
 		ss << setw( 3 ) << setfill( '0' ) << ImageID;
-		string ImagePath = "data/images/genetica/intro" + ss.str()+".bmp" ;
+		string ImagePath = BaseImagePath + "genetica/intro" + ss.str()+".bmp" ;
 		SelectObject(Tiles_DC,ImageMap[ImagePath].gs_hbmp);
 
 		TransparentBlt(BackBuffer, 
@@ -236,7 +238,7 @@ bool CGraphics::Init(HWND hwnd)
 		LogHandler.WriteLog("CGraphics", "Init", "Info", Images.m_Vector.at(i).at(0).c_str(), FILE_INFO);
 		Blitter.finish();
 	}	
-	ActorCompanions.at(0)->SetImage(ImageMap["data/animations/finalfantasy6.bmp"]);
+	ActorCompanions.at(0)->SetImage(ImageMap[BaseAnimationPath + "finalfantasy6.bmp"]);
 
 	//GameScreens.push_front(new CMenuScreen);
 	//GameScreens.push_front(new CPauseScreen);
@@ -306,10 +308,6 @@ bool CGraphics::Execute(bool Focused)
 	for( std::vector<SActor>::iterator citer = SActors.begin();
 	citer != SActors.end(); ++citer)
 	{
-		//LogHandler.AddTagTree("LogEntries");
-		//LogHandler.WriteLog("CGraphics", "execute", "Info", (*citer).GetID(), FILE_INFO);
-		//LogHandler.WriteLog("CGraphics", "execute", "Info", (*citer).m_IsActive, FILE_INFO);
-		//LogHandler.CloseTagTree(); // testEntries
 		(*citer).Update();
 	}
 	
@@ -359,43 +357,9 @@ bool CGraphics::Execute(bool Focused)
 	return true;
 }
 
-// By reference HDC& DrawSurface
-//int AnimateExplosion(HDC DrawSurface, HDC TileSurface, BITMAP& bmp, int i_x = 0, int i_y = 0)
-//{
-//	// i_rop is the color value that will be transparent
-//	Blitter.tqueue(DrawSurface,
-//		i_x,
-//		i_y,
-//		TileSize,
-//		TileSize,
-//		TileSurface,
-//		TileSize*glob_anim_frame_x,
-//		TileSize*glob_anim_frame_y,
-//		RGB(0,0,0),
-//		0);
-//
-//	if( glob_anim_frame_x*TileSize > bmp.bmWidth )
-//	{
-//		glob_anim_frame_x = 0;
-//		glob_anim_frame_y++;
-//		if( glob_anim_frame_y*TileSize > bmp.bmHeight )
-//		{
-//			glob_anim_frame_y = 0;
-//			glob_anim_frame_x = 0;
-//		}
-//	}
-//	else
-//	{
-//		glob_anim_frame_x++;
-//	}
-//
-//	return glob_anim_frame_x;
-//}
-
-
 void CGraphics::the_bank()
 {
-	SelectObject(Tiles_DC,ImageMap["data/images/buttonsmisc.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "buttonsmisc.bmp"].gs_hbmp);
 	
 	DynamicText.clear();
 
@@ -430,21 +394,19 @@ void CGraphics::the_bank()
 
 void CGraphics::RenderInventory(int i_Actor)
 {
-	SelectObject(Tiles_DC,ImageMap["data/images/inventory.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "inventory.bmp"].gs_hbmp);
 
 	TransparentBlt(BackBuffer, 
 		0, 
 		0, 
-		ImageMap["data/images/inventory.bmp"].gs_bmp.bmWidth, 
-		ImageMap["data/images/inventory.bmp"].gs_bmp.bmHeight, 
+		ImageMap[BaseImagePath + "inventory.bmp"].gs_bmp.bmWidth, 
+		ImageMap[BaseImagePath + "inventory.bmp"].gs_bmp.bmHeight, 
 		Tiles_DC, 
 		0, 
 		0,
-		ImageMap["data/images/inventory.bmp"].gs_bmp.bmWidth,
-		ImageMap["data/images/inventory.bmp"].gs_bmp.bmHeight,
+		ImageMap[BaseImagePath + "inventory.bmp"].gs_bmp.bmWidth,
+		ImageMap[BaseImagePath + "inventory.bmp"].gs_bmp.bmHeight,
 		RGB(255,0,255));
-
-	//Blitter.finish();
 
 	int tmp = 0;
 	int tmp2 = 0;
@@ -554,7 +516,7 @@ void CGraphics::RenderInventory(int i_Actor)
 		citer != SActors.at(GetActiveActor(SActors)).m_Inventory.end(); ++citer)
 	{
 		_itoa((*citer),buffer,10);
-		SelectObject(Tiles_DC,ImageMap["data/images/equipment.bmp"].gs_hbmp);
+		SelectObject(Tiles_DC,ImageMap[BaseImagePath + "equipment.bmp"].gs_hbmp);
 
 		if(tmp >= top_item && tmp < top_item+4)
 		{
@@ -631,9 +593,9 @@ void CGraphics::EquipInventory(int i_Actor)
 							}
 						}
 
-						//string effect = csvItems.at(*iter2).at(3).c_str();
-						//string effect2 = "HP_REPLENISH";
-						//transform(effect.begin(), effect.end(), tolower);
+						string effect = "HP_REPLENISH";
+						std::transform(effect.begin(), effect.end(), effect.begin(), (int(*)(int)) tolower);
+
 						if ( _stricmp( Items.m_Vector.at(*iter2).at(3).c_str(), "ATTACK" ) == 0 )
 						{
 							MessageBox(NULL,Items.m_Vector.at((*iter2)).at(3).c_str(),"EFFECT",MB_OK);
@@ -715,7 +677,7 @@ void CGraphics::RemoveInventory(int i_Actor)
 
 void CGraphics::the_general_store()
 {
-	SelectObject(Tiles_DC,ImageMap["data/images/buttonsmisc.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "buttonsmisc.bmp"].gs_hbmp);
 
 	DynamicText.clear();
 
@@ -822,7 +784,7 @@ void CGraphics::the_general_store()
 	{
 		int image_id = atoi(Items.m_Vector.at(store_item_page).at(1).c_str());
 
-		SelectObject(Tiles_DC,ImageMap["data/images/equipment.bmp"].gs_hbmp);
+		SelectObject(Tiles_DC,ImageMap[BaseImagePath + "equipment.bmp"].gs_hbmp);
 		
 		TransparentBlt(
 		BackBuffer, 
@@ -846,7 +808,7 @@ void CGraphics::the_general_store()
 
 void CGraphics::the_guild()
 {
-	SelectObject(Tiles_DC,ImageMap["data/images/buttonsmisc.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "buttonsmisc.bmp"].gs_hbmp);
 
 	DynamicText.clear();
 	DynamicText.insert(make_pair(string("DESCRIPTION"),string(Guilds.m_Vector.at(SActors.at(GetActiveActor(SActors)).m_ClassID).at(1).c_str())));
@@ -991,7 +953,7 @@ void generate_example ()
 
 void CGraphics::the_battle()
 {
-	SelectObject(Tiles_DC,ImageMap["data/images/BattleBG.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "BattleBG.bmp"].gs_hbmp);
 
 	StretchBlt(
 		BackBuffer, 
@@ -1002,8 +964,8 @@ void CGraphics::the_battle()
 		Tiles_DC, 
 		0, 
 		0, 
-		ImageMap["data/images/BattleBG.bmp"].gs_bmp.bmWidth/3,
-		ImageMap["data/images/BattleBG.bmp"].gs_bmp.bmHeight/7,
+		ImageMap[BaseImagePath + "BattleBG.bmp"].gs_bmp.bmWidth/3,
+		ImageMap[BaseImagePath + "BattleBG.bmp"].gs_bmp.bmHeight/7,
 		SRCCOPY);
 
 	static bool playing = false;
@@ -1051,7 +1013,7 @@ void CGraphics::the_battle()
 		std::for_each( RActor_curr_hp.begin(), RActor_curr_hp.end(),RenderHP);
 	}
 
-	SelectObject(Tiles_DC,ImageMap["data/images/pic.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "pic.bmp"].gs_hbmp);
 	if(fmap.get_tile(SActors.at(GetActiveActor(SActors)).m_Coord.y,SActors.at(GetActiveActor(SActors)).m_Coord.x).Layer[MapTile::OBJECT] >= 0)
 	{
 		Blitter.tqueue(BackBuffer, 
@@ -1115,7 +1077,7 @@ void CGraphics::the_battle()
 				SActors.at(n-1).m_IsActive = true;
 				SActor_active = n;
 				SActor_active_face = *it;
-				SelectObject(Tiles_DC,ImageMap["data/gfx/images/FireAnimations.bmp"].gs_hbmp);
+				SelectObject(Tiles_DC,ImageMap[BaseImagePath + "FireAnimations.bmp"].gs_hbmp);
 				//AnimateExplosion(BackBuffer, Tiles_DC, gs_tile.gs_bmp[MapTileType::STD_HAWK],it->left,it->top);
 			}
 		}
@@ -1153,7 +1115,7 @@ void CGraphics::the_battle()
 
 	if(EnemyAction)
 	{
-		SelectObject(Tiles_DC,ImageMap["data/gfx/images/FireAnimations.bmp"].gs_hbmp);
+		SelectObject(Tiles_DC,ImageMap[BaseAnimationPath + "FireAnimations.bmp"].gs_hbmp);
 		SActors.at(GetActiveActor(SActors)).m_HP -= rand()%atoi(Monsters.m_Vector.at(EnemyID).at(1).c_str())/10;
 		EnemyAction = false;
 	}
@@ -1180,10 +1142,10 @@ void CGraphics::the_tavern()
 	city_iter = city_visited.find(SActors.at(GetActiveActor(SActors)).m_Coord.y);
 	if( city_iter != city_visited.end() )
 	{
-	SelectObject(Tiles_DC,ImageMap["data/gfx/images/chapterimages.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "chapterimages.bmp"].gs_hbmp);
 
-	int sizen = ImageMap["data/gfx/images/chapterimages.bmp"].gs_bmp.bmHeight/5*city_visited.size();
-	int sizen2 = ImageMap["data/gfx/images/chapterimages.bmp"].gs_bmp.bmHeight/5*(city_visited.size()-1);
+	int sizen = ImageMap[BaseImagePath + "chapterimages.bmp"].gs_bmp.bmHeight/5*city_visited.size();
+	int sizen2 = ImageMap[BaseImagePath + "chapterimages.bmp"].gs_bmp.bmHeight/5*(city_visited.size()-1);
 
 	TransparentBlt(BackBuffer, 
 		0, 
@@ -1192,9 +1154,9 @@ void CGraphics::the_tavern()
 		Screen.bottom, 
 		Tiles_DC, 
 		0, 
-		ImageMap["data/gfx/images/chapterimages.bmp"].gs_bmp.bmHeight/5*city_visited.size(),
-		ImageMap["data/gfx/images/chapterimages.bmp"].gs_bmp.bmWidth,
-		ImageMap["data/gfx/images/chapterimages.bmp"].gs_bmp.bmHeight/5,
+		ImageMap[BaseImagePath + "chapterimages.bmp"].gs_bmp.bmHeight/5*city_visited.size(),
+		ImageMap[BaseImagePath + "chapterimages.bmp"].gs_bmp.bmWidth,
+		ImageMap[BaseImagePath + "chapterimages.bmp"].gs_bmp.bmHeight/5,
 		RGB(255,0,255));
 		Blitter.finish();
 
@@ -1281,7 +1243,7 @@ void CGraphics::Menu()
 
 		stringstream ss;
 		ss << setw( 3 ) << setfill( '0' ) << ImageID;
-		string ImagePath = "data/gfx/images/genetica/intro" + ss.str()+".bmp" ;
+		string ImagePath = BaseImagePath + "genetica/intro" + ss.str()+".bmp" ;
 		SelectObject(Tiles_DC,ImageMap[ImagePath].gs_hbmp);
 
 		TransparentBlt(BackBuffer, 
@@ -1318,7 +1280,7 @@ void CGraphics::Menu()
 
 	//Rendering the text on top of the buttons only
 	DynamicText.clear();
-	SelectObject(Tiles_DC,ImageMap["data/gfx/images/buttonsmisc2.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "buttonsmisc2.bmp"].gs_hbmp);
 	Blitter.queue_menu(BackBuffer,GUIObjects, BDR_RAISEDINNER, BF_RECT,"MENU",DynamicText);
 
 	int tmp_hover = GUIHover(GUIObjects, Mouse, "MENU");
@@ -1326,7 +1288,7 @@ void CGraphics::Menu()
 	{
 		int ButtonWidth = 300;
 		int ButtonHeight = 50;
-		SelectObject(Tiles_DC,ImageMap["data/gfx/images/buttonsmisc2.bmp"].gs_hbmp);
+		SelectObject(Tiles_DC,ImageMap[BaseImagePath + "buttonsmisc2.bmp"].gs_hbmp);
 		TransparentBlt(BackBuffer, 
 			GUIObjects.at(tmp_hover).x - (ButtonWidth / 2), 
 			GUIObjects.at(tmp_hover).y - (ButtonHeight / 2), 
@@ -1357,7 +1319,7 @@ void CGraphics::Menu()
 		int ButtonWidth = 300;
 		int ButtonHeight = 50;
 		// Renders a lightning bolt over button when pressed
-		SelectObject(Tiles_DC,ImageMap["data/gfx/images/buttonsmisc2.bmp"].gs_hbmp);
+		SelectObject(Tiles_DC,ImageMap[BaseImagePath + "buttonsmisc2.bmp"].gs_hbmp);
 		TransparentBlt(BackBuffer, 
 			GUIObjects.at(tmp_hover).x - (ButtonWidth / 2), 
 			GUIObjects.at(tmp_hover).y - (ButtonHeight / 2), 
@@ -1425,7 +1387,7 @@ void CGraphics::Menu()
 
 void CGraphics::MenuOptions()
 {
-	SelectObject(Tiles_DC,ImageMap["data/gfx/images/RickardEntertainment.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "RickardEntertainment.bmp"].gs_hbmp);
 
 	TransparentBlt(BackBuffer, 
 		0, 
@@ -1435,8 +1397,8 @@ void CGraphics::MenuOptions()
 		Tiles_DC, 
 		0, 
 		0,
-		ImageMap["data/gfx/images/RickardEntertainment.bmp"].gs_bmp.bmWidth,
-		ImageMap["data/gfx/images/RickardEntertainment.bmp"].gs_bmp.bmHeight,
+		ImageMap[BaseImagePath + "RickardEntertainment.bmp"].gs_bmp.bmWidth,
+		ImageMap[BaseImagePath + "RickardEntertainment.bmp"].gs_bmp.bmHeight,
 		RGB(255,0,255));
 	//SDevice GfxDevice;
 	GfxDevice.GetAllDisplaySettings(main_hwnd,Mouse);
@@ -1558,7 +1520,7 @@ struct optionclass {
   optionclass() {current=0;}
 	void operator() (RECT i) 
 	{
-		SelectObject(Tiles_DC,ImageMap["data/gfx/images/options.bmp"].gs_hbmp);
+		SelectObject(Tiles_DC,ImageMap[BaseImagePath + "options.bmp"].gs_hbmp);
 		TransparentBlt(BackBuffer,
 		i.left, //left
 		i.top,   // down
@@ -2163,19 +2125,19 @@ bool CGraphics::Paint()
 		Blitter.tqueue(BackBuffer, Screen.left+30, Screen.bottom - 87, 64, 64, Tiles_DC, (SActors.at(GetActiveActor(SActors)).m_Sprite-1)*96, 0, RGB(255,0,255), 0);
 */
 
-	SelectObject(Tiles_DC,ImageMap["data/gfx/images/backpanel.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "backpanel.bmp"].gs_hbmp);
 
 	TransparentBlt(
 		BackBuffer, 
 		0, 
 		0, 
-		ImageMap["data/gfx/images/backpanel.bmp"].gs_bmp.bmWidth, 
-		ImageMap["data/gfx/images/backpanel.bmp"].gs_bmp.bmHeight, 
+		ImageMap[BaseImagePath + "backpanel.bmp"].gs_bmp.bmWidth, 
+		ImageMap[BaseImagePath + "backpanel.bmp"].gs_bmp.bmHeight, 
 		Tiles_DC, 
 		0, 
 		0, 
-		ImageMap["data/gfx/images/backpanel.bmp"].gs_bmp.bmWidth,
-		ImageMap["data/gfx/images/backpanel.bmp"].gs_bmp.bmHeight,
+		ImageMap[BaseImagePath + "backpanel.bmp"].gs_bmp.bmWidth,
+		ImageMap[BaseImagePath + "backpanel.bmp"].gs_bmp.bmHeight,
 		RGB(255,0,255));
 
 
@@ -2198,7 +2160,7 @@ bool CGraphics::Paint()
 		// RenderViewport
 		
 		// Vector crash bug in RenderViewport
-		RenderViewport(ViewportTilesX-1,ViewportTilesY,ImageMap["data/gfx/images/pic.bmp"].gs_hbmp);
+		RenderViewport(ViewportTilesX-1,ViewportTilesY,ImageMap[BaseImagePath + "pic.bmp"].gs_hbmp);
 
 		// rendering character faces ontop of the map
 		HBRUSH hbr,hbb,hby,oldbrBrush,oldbbBrush,oldbyBrush;
@@ -2352,8 +2314,8 @@ void CGraphics::CreateCharacter()
 	// 80 height 96 width
 	const int FaceSpriteRows = 25;
 	const int FaceSpriteColumns = 8;
-	const int FaceSpriteHeight = ImageMap["data/gfx/images/face_sprites.bmp"].gs_bmp.bmHeight / FaceSpriteRows;
-	const int FaceSpriteWidth = ImageMap["data/gfx/images/face_sprites.bmp"].gs_bmp.bmWidth / FaceSpriteColumns;
+	const int FaceSpriteHeight = ImageMap[BaseImagePath + "face_sprites.bmp"].gs_bmp.bmHeight / FaceSpriteRows;
+	const int FaceSpriteWidth = ImageMap[BaseImagePath + "face_sprites.bmp"].gs_bmp.bmWidth / FaceSpriteColumns;
 
 	std::list<RECT> RActor_faces,RActor_hp,RActor_curr_hp,RActor_mp;
 	std::list<RECT>::iterator it;
@@ -2422,7 +2384,7 @@ void CGraphics::CreateCharacter()
 	//std::for_each( RActor_faces.begin(), RActor_faces.end(),SDrawFaceOBj);
 
 	
-	SelectObject(Tiles_DC,ImageMap["data/gfx/images/face_sprites.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "face_sprites.bmp"].gs_hbmp);
 				TransparentBlt(BackBuffer, 
 				400, 
 				0, 
@@ -2437,7 +2399,7 @@ void CGraphics::CreateCharacter()
 
 	static int count = 0;
 	SActors.at(GetActiveActor(SActors)).m_Name = this->actor_name;
-		SelectObject(Tiles_DC,ImageMap["data/gfx/images/buttonsmisc.bmp"].gs_hbmp);
+		SelectObject(Tiles_DC,ImageMap[BaseImagePath + "buttonsmisc.bmp"].gs_hbmp);
 
 		RECT EditNameBox={0,0,300,50};
 	DrawFrameControl(
@@ -2951,7 +2913,7 @@ void CGraphics::CreateCharacter()
 
 void CGraphics::Outro()
 {
-	SelectObject(Tiles_DC,ImageMap["data/gfx/images/gameover.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "gameover.bmp"].gs_hbmp);
 
 	TransparentBlt(BackBuffer, 
 		0, 
@@ -2961,8 +2923,8 @@ void CGraphics::Outro()
 		Tiles_DC, 
 		0, 
 		0,
-		ImageMap["data/gfx/images/gameover.bmp"].gs_bmp.bmWidth,
-		ImageMap["data/gfx/images/gameover.bmp"].gs_bmp.bmHeight,
+		ImageMap[BaseImagePath + "gameover.bmp"].gs_bmp.bmWidth,
+		ImageMap[BaseImagePath + "gameover.bmp"].gs_bmp.bmHeight,
 		RGB(255,0,255));
 
 	for (int i = 19; i >= 5; i--)
@@ -2992,7 +2954,7 @@ void CGraphics::Outro()
 void CGraphics::HallOfFame()
 {
 	EraseScreen();
-	SelectObject(Tiles_DC,ImageMap["data/gfx/images/qataria_elfwood.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "qataria_elfwood.bmp"].gs_hbmp);
 
 	TransparentBlt(BackBuffer, 
 		0, 
@@ -3002,11 +2964,11 @@ void CGraphics::HallOfFame()
 		Tiles_DC, 
 		0, 
 		0,
-		ImageMap["data/gfx/images/qataria_elfwood.bmp"].gs_bmp.bmWidth,
-		ImageMap["data/gfx/images/qataria_elfwood.bmp"].gs_bmp.bmHeight,
+		ImageMap[BaseImagePath + "qataria_elfwood.bmp"].gs_bmp.bmWidth,
+		ImageMap[BaseImagePath + "qataria_elfwood.bmp"].gs_bmp.bmHeight,
 		RGB(255,0,255));
 	
-		SelectObject(Tiles_DC,ImageMap["data/gfx/images/pqpc_dialoguemain.bmp"].gs_hbmp);
+		SelectObject(Tiles_DC,ImageMap[BaseImagePath + "pqpc_dialoguemain.bmp"].gs_hbmp);
 		TransparentBlt(BackBuffer, 
 			0, 
 			0, 
@@ -3230,7 +3192,7 @@ void CGraphics::CompanionList()
 {
 	EraseScreen();
 
-	SelectObject(Tiles_DC,ImageMap["data/gfx/images/dungeon.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "dungeon.bmp"].gs_hbmp);
 
 	TransparentBlt(BackBuffer, 
 		0, 
@@ -3240,8 +3202,8 @@ void CGraphics::CompanionList()
 		Tiles_DC, 
 		0, 
 		0,
-		ImageMap["data/gfx/images/dungeon.bmp"].gs_bmp.bmWidth,
-		ImageMap["data/gfx/images/dungeon.bmp"].gs_bmp.bmHeight,
+		ImageMap[BaseImagePath + "dungeon.bmp"].gs_bmp.bmWidth,
+		ImageMap[BaseImagePath + "dungeon.bmp"].gs_bmp.bmHeight,
 		RGB(255,0,255));
 
 	int Index = 0;
@@ -3318,7 +3280,7 @@ void CGraphics::SpellList()
 	// Dialogue box for the information of the spell
 
 
-	SelectObject(Tiles_DC,ImageMap["data/images/gfx/spellicons/arcane_circle.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "spellicons/arcane_circle.bmp"].gs_hbmp);
 	TransparentBlt(BackBuffer, 
 		Spell1.left, 
 		Spell1.top, 
@@ -3327,11 +3289,11 @@ void CGraphics::SpellList()
 		Tiles_DC, 
 		0, 
 		0,
-		ImageMap["data/images/gfx/spellicons/arcane_circle.bmp"].gs_bmp.bmWidth,
-		ImageMap["data/images/gfx/spellicons/arcane_circle.bmp"].gs_bmp.bmHeight,
+		ImageMap[BaseImagePath + "spellicons/arcane_circle.bmp"].gs_bmp.bmWidth,
+		ImageMap[BaseImagePath + "spellicons/arcane_circle.bmp"].gs_bmp.bmHeight,
 		RGB(255,0,255));
 
-	SelectObject(Tiles_DC,ImageMap["data/images/gfx/spellicons/blinding_snow.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "spellicons/blinding_snow.bmp"].gs_hbmp);
 	TransparentBlt(BackBuffer, 
 		Spell2.left, 
 		Spell2.top, 
@@ -3340,11 +3302,11 @@ void CGraphics::SpellList()
 		Tiles_DC, 
 		0, 
 		0,
-		ImageMap["data/images/gfx/spellicons/blinding_snow.bmp"].gs_bmp.bmWidth,
-		ImageMap["data/images/gfx/spellicons/blinding_snow.bmp"].gs_bmp.bmHeight,
+		ImageMap[BaseImagePath + "spellicons/blinding_snow.bmp"].gs_bmp.bmWidth,
+		ImageMap[BaseImagePath + "spellicons/blinding_snow.bmp"].gs_bmp.bmHeight,
 		RGB(255,0,255));
 
-	SelectObject(Tiles_DC,ImageMap["data/images/gfx/spellicons/cosmic_energy.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "spellicons/cosmic_energy.bmp"].gs_hbmp);
 	TransparentBlt(BackBuffer, 
 		Spell3.left, 
 		Spell3.top, 
@@ -3353,11 +3315,11 @@ void CGraphics::SpellList()
 		Tiles_DC, 
 		0, 
 		0,
-		ImageMap["data/images/gfx/spellicons/cosmic_energy.bmp"].gs_bmp.bmWidth,
-		ImageMap["data/images/gfx/spellicons/cosmic_energy.bmp"].gs_bmp.bmHeight,
+		ImageMap[BaseImagePath + "spellicons/cosmic_energy.bmp"].gs_bmp.bmWidth,
+		ImageMap[BaseImagePath + "spellicons/cosmic_energy.bmp"].gs_bmp.bmHeight,
 		RGB(255,0,255));
 
-	SelectObject(Tiles_DC,ImageMap["data/images/gfx/spellicons/evil.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "spellicons/evil.bmp"].gs_hbmp);
 	TransparentBlt(BackBuffer, 
 		Spell4.left, 
 		Spell4.top, 
@@ -3366,11 +3328,11 @@ void CGraphics::SpellList()
 		Tiles_DC, 
 		0, 
 		0,
-		ImageMap["data/images/gfx/spellicons/evil.bmp"].gs_bmp.bmWidth,
-		ImageMap["data/images/gfx/spellicons/evil.bmp"].gs_bmp.bmHeight,
+		ImageMap[BaseImagePath + "spellicons/evil.bmp"].gs_bmp.bmWidth,
+		ImageMap[BaseImagePath + "spellicons/evil.bmp"].gs_bmp.bmHeight,
 		RGB(255,0,255));
 
-	SelectObject(Tiles_DC,ImageMap["data/images/gfx/spellicons/fireball.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "spellicons/fireball.bmp"].gs_hbmp);
 	TransparentBlt(BackBuffer, 
 		Spell5.left, 
 		Spell5.top, 
@@ -3379,11 +3341,11 @@ void CGraphics::SpellList()
 		Tiles_DC, 
 		0, 
 		0,
-		ImageMap["data/images/gfx/spellicons/fireball.bmp"].gs_bmp.bmWidth,
-		ImageMap["data/images/gfx/spellicons/fireball.bmp"].gs_bmp.bmHeight,
+		ImageMap[BaseImagePath + "spellicons/fireball.bmp"].gs_bmp.bmWidth,
+		ImageMap[BaseImagePath + "spellicons/fireball.bmp"].gs_bmp.bmHeight,
 		RGB(255,0,255));
 
-	SelectObject(Tiles_DC,ImageMap["data/images/gfx/spellicons/frost.bmp"].gs_hbmp);
+	SelectObject(Tiles_DC,ImageMap[BaseImagePath + "spellicons/frost.bmp"].gs_hbmp);
 	TransparentBlt(BackBuffer, 
 		Spell6.left, 
 		Spell6.top, 
@@ -3392,8 +3354,8 @@ void CGraphics::SpellList()
 		Tiles_DC, 
 		0, 
 		0,
-		ImageMap["data/images/gfx/spellicons/frost.bmp"].gs_bmp.bmWidth,
-		ImageMap["data/images/gfx/spellicons/frost.bmp"].gs_bmp.bmHeight,
+		ImageMap[BaseImagePath + "spellicons/frost.bmp"].gs_bmp.bmWidth,
+		ImageMap[BaseImagePath + "spellicons/frost.bmp"].gs_bmp.bmHeight,
 		RGB(255,0,255));
 
 	RECT LevelTitle = {200,0,300,16};

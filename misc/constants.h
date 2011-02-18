@@ -198,4 +198,9 @@ const DWORD TRIGGER_INITIALLY_ENABLED = 3;
 #define VK_X		0x64
 #define VK_Y		0x65
 #define VK_Z		0x66
+
+// File paths
+
+const std::string BaseImagePath = "data/gfx/images/";
+const std::string BaseAnimationPath = "data/gfx/animations/";
 #endif
