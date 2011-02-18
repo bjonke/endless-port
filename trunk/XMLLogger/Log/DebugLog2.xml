@@ -6,8 +6,8 @@
 <Project>
 	<Name>XMLlogger</Name>
 	<Type>Project</Type>
-	<FileName>p:\forgotten-dreams-export\misc\main.cpp</FileName>
-	<Compiled>Feb 18 2011 07:57:01</Compiled>
+	<FileName>c:\users\tempo\downloads\programming\endless-port\misc\main.cpp</FileName>
+	<Compiled>Feb 18 2011 09:23:42</Compiled>
 	<CommentLines>
 		<CommentLine>This is the programs entry point</CommentLine>
 		<CommentLine>of multiple lines</CommentLine>
@@ -17,21 +17,21 @@
 			<ClassName>Main</ClassName>
 			<FuncName>main</FuncName>
 			<DebugType>Info</DebugType>
-			<Timestamp>Fri Feb 18 07:57:08 2011
+			<Timestamp>Fri Feb 18 09:46:39 2011
 </Timestamp>
 			<Info>Starting up</Info>
-			<Line>113</Line>
-			<File>p:\forgotten-dreams-export\misc\main.cpp</File>
+			<Line>112</Line>
+			<File>c:\users\tempo\downloads\programming\endless-port\misc\main.cpp</File>
 		</LogEntry>
 		<LogEntry>
 			<ClassName>Main</ClassName>
 			<FuncName>main</FuncName>
 			<DebugType>Info</DebugType>
-			<Timestamp>Fri Feb 18 07:57:08 2011
+			<Timestamp>Fri Feb 18 09:46:39 2011
 </Timestamp>
 			<Info>RegisterClass initialized...</Info>
-			<Line>148</Line>
-			<File>p:\forgotten-dreams-export\misc\main.cpp</File>
+			<Line>147</Line>
+			<File>c:\users\tempo\downloads\programming\endless-port\misc\main.cpp</File>
 		</LogEntry>
 	</LogEntries>
 </Project>

@@ -1,6 +1,5 @@
-abcdbcdcdefghdabcda.sav0bytes
-bcebcdeabcbefabcbdefg.sav0bytes
-ecdefccdefaadefc.sav0bytes
+actor - Copy.sav0bytes
+actor.sav0bytes
 saveslot1.sav0bytes
 saveslot2.sav0bytes
 saveslot3.sav0bytes
