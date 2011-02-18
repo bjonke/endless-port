@@ -1,0 +1,5 @@
+sword
+axe
+bow
+halberd
+staff

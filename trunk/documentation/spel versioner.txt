@@ -1,0 +1,114 @@
+Version 0.1
+
+Denna versionen av spelet kommer bara innefatta det allra simplaste av saker, saker bara för att man skall kunna spel överhuvudtaget.
+Spelet kommer vara placerat i ett 640x480 fönster utan möjlighet att resizea för att förenkla saker, anledningen till det lilla formatet är att det blir lättare att blåsa upp en mindre upplösning för spelare som har bättre prestanda än at försöka förminska en större upplösning till de mindre lyckliga. Grafiken kommer också att vara det allra enklaste i ren paint, ingen musik kommer adderas förrens att spelet har fått lite mera karaktär då jag finner det minst viktigt i just detta projektet, anledningen till följande är att ett spel går att spela utan musik eller ljud men inte de andra delarna som uppgör ett spel. Senare versioner kommmer också att innehålla multiplayer features är det planerat ifall projektet fortgår.
+
+det skall också finnas en grafisk representation av vart man springer så som i D&d eller eye of the beholder, men detta kommer
+implementeras i nästa version av spelet, första versionen kommer att
+navigeras enbart genom det som senare kommer att bli en karta.
+
+i senare versioner kommer det också att adderas fog of war till kartan så man inte ser allt och vad man har varit, det kan också tänkas tas bort den grafiska representationen av vart konster och item befinner sig på kartan då detta inte är något man normalt ser på en vanlig karta.
+
+
+03:15 2008-07-22
+
+Shoppen fungerar nu och man kan bläddra mellan befintliga items, den lägger ihop items från inventoryt och shoppen i en lista som man sedan bläddrar i. Senare versioner kan tänkas ha saker som drag/drop eller klicka med musen och välj köp. Dock är det mera kritiskt med att få alla items i en databas så att man har ordentliga items och inte bara ett namn.
+
+03:19 2008-07-22 Tavern och quests
+
+Detta kapitel beskriver hur den första versionen av tavernan och dess quests är tänkt att fungera, man går in på tavernan och där bläddrar man sedan igenom en quest log/lista och väljer vilket quest
+man vill ha. DEt kommer att vara väldigt enkelt i den första utgåvan så att man får dubbel exp när man dödar den typen av monster man har quest på eller hittar det itemet som man söker. 
+Detta kommer ske varje gång för att förenkla saker då det blir krångligare ifall den skall notera questen som gjord och sedan ta bort den.
+
+03:55 2008-07-22
+lärde mig att gör man en list av lpcstr så kopierar den namn till samma adress och skriver över gammalt när man använder push, man måste köra med string.
+
+05:34 2008-07-22
+Nu fick jag mig en ide om att man kanske skall ha sig en status bar där den skriver alla dessa popup texter när man hooverar över saker.
+
+06:24 2008-07-22
+en senare fix för spelet är att se till att det inte går att resiza mindre än 640x480.
+
+todo
+----
+bytt ut konstanter för backpack storleken med en variabel istället.
+
+
+03:23 2008-07-21
+
+det behövs arbetas en hel del på saker som att ladda in items på varje level, nu så laddar den bara in items på första leveln en gång för att den senare får ett false värde, detta måste ändras så att det görs en kontroll av varje level alternativt att varje level med items laddas in en gång vid starten så slipper man gör a en kontroll varje gång man byter level.
+
+
+03:51 2008-07-21
+
+i fortsättningen skall denna versions filen finnas med i varje projekt som sparas undan. nu skall det skrivas om så att man får 
+ett normalt windows fönster som går att flytta, troliga problem kommer att vara sådant som att rutor och liknande inte matchar fönstret då det finnas en frame runt som ändrar offset på alla objekt.
+
+WS_POPUP | WS_BORDER -> WS_OVERLAPPED
+
+intro bilden reagerar på saker som sker när fönstret inte är i fokus, detta måste åtgärdas annars ser det bra ut. tyvärr är staden
+förskjuten neråt av ändringen och måste placeras om eller snarare anpassas efter hur stort fönstret är och placeras i nedre botten vid alla olika storlekar. Muspekaren är fortfarande buggad.
+
+04:06 2008-07-21
+alla knapparna för att välja saker i staden är omskrivna för att anpassa sig efter storleken på fönstret nu.
+
+04:13 2008-07-21
+
+redigerar splashen för staden så att inte grafiken för knapparna är en del av den då de måste anpassas efter storleken på fönstret. Funderar på att konvertera de klickbara delarna till bilden istället
+ifall den kan anpassas efter upplösning. SOm det visar sig så anpassar sig inte stads bilden efter hur stor upplösningen är.
+
+04:24 2008-07-21
+
+i nästa version eller denna så kan det komma att ske en förändring hur man navigerar mellan stadens olika delar, så att man är tvungen att klicka på en knapp för att lämna de olika platserna, detta för att undvika buggen med att den flippar in/ut ur olika platser även om man inte har spelet i fokus.
+
+05:50 2008-07-21
+
+fighting är fixat en del och man kan nu bara få items från mosnter ifall man inte redan har ett fullt inventory, detta kommer dock att ändras i senare version till att itemet dropar på marken. Kanske kan fixa det i den versionen får se hur det blir.
+
+08:25 2008-07-23
+
+Nu så har det kodas en hel del till och kommit fram till att det inte verkar fungera med en upplösning på 640x480 för att få plats med all grafiken.
+
+09:05 2008-07-23 buggar i fighting funktioner
+
+Det har visat sig att ifall karaktären har visa värden satta till 0  så buggar spelet ur. detta måste fixas så snart som möjligt. Har man 0 i hälsa så kan man automagiskt nita alla monster.
+
+11:43 2008-07-24 Menu kod ändringar
+
+I Menu funktionen sparar jag de delarna som gör att man med hjälp av tangentbordet kan aktivera menyvalen, det då jag anser att man borde kunna spela spelet även om så inte skulle råka ha en mus att tillgå.
+
+11:47 2008-07-24 Skriver om koden i general store
+
+Jag skriver om koden i general store funktionen så att den anpassar sig efter upplösningen man väljer att använda sig av.
+
+12:04 2008-07-24 Adderar blädder knappar för items i general store
+
+12:17 2008-07-24 (bug)liten bug i general store där det sista objektet inte finns med i Items[] lista.
+
+14:33 2008-07-24 Musik
+
+Jag har lagt till så att när man klickar på options i menyn så randomizar den en medeltida låt som spelas på repeat tills en ny
+väljs.
+
+14:37 2008-07-24 Morgue
+
+Lägger till så att man hamnar i morgue ifall man dör och att man måste välja revive ifall man vill spela vidare.
+
+02:33 2008-07-25 SKrivit om funktioner
+
+SKrev om guidl funktionen och dess layout, konverterade också alla musik filerna till wav format så att de kan spelas upp i spelet.
+Tog bort en massa musik filer också för att göra mera plats.
+
+13:41 2008-07-25 Problem med fighting funktionen
+
+DEt är stora problem med fighting funktionen så som att man inte kan avbryta striden då den går in i loop tills att någon av spelarna har 0 HP skulle kunna fungera om man kodade in en avbryt knapp motsvarande men då loopen är så tight hinner den inte reagera på musklickningar. Så beslut fattas om att försöka skriva om hela strids systemet.
+
+11:02 2008-07-26 Kod och allt flyttat
+
+Har kopierat all kod och sådant från laptopen för att installera om den då den fungerade
+mycket illa.
+
+11:03 2008-07-26 Adderar ny grafik
+
+Ritar om grafiken till spelet vilket också medför en ändring av knapparna i staden till grafik
+istället för rectangle funktions koden.

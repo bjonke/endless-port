@@ -1,0 +1,13 @@
+abcdbcdcdefghdabcda.sav0 bytes
+bcebcdeabcbefabcbdefg.sav0bytes
+ecdefccdefaadefc.sav0bytes
+saveslot1.sav0bytes
+saveslot2.sav0bytes
+saveslot3.sav0bytes
+saveslot4.sav0bytes
+saveslot5.sav0bytes
+saveslot6.sav0bytes
+saveslot7.sav0bytes
+saveslot8.sav0bytes
+saveslot9.sav0bytes
+Wrong number of savegame slots!

@@ -1,0 +1,18 @@
+Revision 0.1
+	Basic ground tile layer featuring grass and such
+
+Revision 0.2
+	Layer for overland objects such as towns and caves
+
+Revision 0.3
+	Layer for monsters and related actors
+
+Revision 0.4
+	Layer for trigger items such as traps or quest triggers.
+
+Revision 0.5
+Revision 0.6
+Revision 0.7
+Revision 0.8
+Revision 0.9
+Revision 1.0

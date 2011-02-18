@@ -1,0 +1,62 @@
+# begin
+# m_name
+ecdefccdefaadefc
+# m_ShowInventory
+0
+# m_gold
+593
+# m_mp
+20
+# m_hp
+-46
+# m_max_mp
+20
+# m_max_hp
+10
+# m_xp
+0
+# m_Inventory.size()
+0
+# m_Inventory.size()
+0
+# m_Attack
+10
+# m_Charisma
+10
+# m_ClassID
+0
+# m_Constitution
+10
+# m_Defence
+10
+# m_Dexterity
+10
+# m_Guild
+0
+# m_Intelligence
+10
+# m_Sprite
+1
+# m_StatPoints
+0
+# m_Strength
+10
+# m_Wisdom
+10
+# m_Charisma
+0
+# gmod m_Constitution
+0
+# gmod m_Dexterity
+0
+# gmod m_Intelligence
+0
+# gmod m_Strength
+0
+# gmod m_Wisdom
+0
+# imod m_Attack
+0
+# imod m_Defence
+0
+# end

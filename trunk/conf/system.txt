@@ -1,0 +1,25 @@
+menu_state:8
+glob_anim_frame_x:0
+filedata0Initiating actor 0
+Initiating image 0
+Initiating image 1
+Initiating image 2
+Initiating image 3
+Initiating image 4
+Initiating image 5
+Initiating image 6
+Initiating image 7
+Initiating image 8
+Initiating image 9
+Initiating image 10
+Initiating image 11
+Initiating image 12
+Initiating image 13
+Initiating image 14
+Initiating image 15
+Initiating image 16
+Initiating image 17
+Initiating image 18
+Initiating image 19
+Initiating image 20
+game engine state:0

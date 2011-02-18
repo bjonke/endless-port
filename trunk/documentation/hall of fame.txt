@@ -1,0 +1,14 @@
+Hall of Fame
+
+Decription
+
+a representation of all the best players in the game using a list
+of there achievements.
+
+Dependencies
+
+pod_player
+
+Functions
+
+refresh() - checks to see if there are any new best players
