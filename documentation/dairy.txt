@@ -1,21 +1,17 @@
 07:57 2008-07-17
 
-Fixa till shopen så att det inte är en default size på textsträngen
-för de items som man vill köpa alternativt sälja.
+Fixa till shopen sÃ¥ att det inte Ã¤r en default size pÃ¥ textstrÃ¤ngen
+fÃ¶r de items som man vill kÃ¶pa alternativt sÃ¤lja.
 
-i shopen använder man f1 och f2 för att bläddra igenom items till
-det itemet som man vill köpa7sälja.
+i shopen anvÃ¤nder man f1 och f2 fÃ¶r att blÃ¤ddra igenom items till
+det itemet som man vill kÃ¶pa/sÃ¤lja.
 
-första ändringen som sker med items är nog att shields ge defence bonus medans swords i inventoryt ger en attack bonus, samt att ett
-extra backpack ger en 5 nya slots att placera items i.
-
-12:26 2008-07-17
-NY information om kartorna i mordor I och II är att i ettan är det 30x30 rutor medans i mordor II är det 45x45
+fÃ¶rsta Ã¤ndringen som sker med items Ã¤r nog att shields ge defence bonus medans swords i inventory ger en attack bonus, samt att ett extra backpack ger en 5 nya slots att placera utrustning i.
 
 12:41 2008-07-17
 
-weapons that can hurt weapon resistant monsters must be found on alevel half the monster level or higher.
+weapons that can hurt weapon resistant monsters must be found on a level half the monster level or higher.
 
 21:47 2008-07-21
 
-Kodar in så att man kan välja ett quest i tavernan, första versionen visar questen bara som ett nummer vilket sedan kommer kopplas till en beskrivning och eventuella actions för att questen uppfylls.
+Kodar in sÃ¥ att man kan vÃ¤lja ett quest i tavernan, fÃ¶rsta versionen visar questen bara som ett nummer vilket sedan kommer kopplas till en beskrivning och eventuella actions fÃ¶r att questen uppfylls.
