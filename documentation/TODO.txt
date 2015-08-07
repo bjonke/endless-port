@@ -1,5 +1,0 @@
-1. MonsterDB skall in i koden och ta över hanteringen av monster
-2. Weapon projektet skall skrivas om så att den har liknande funktionalitet som
-monsterDB.
-3. Fighting systemet i Weapon projektet skall implementeras i forgotten koden
-4. Skriva kod för att ladda in kartor med tillhörande monster och items
