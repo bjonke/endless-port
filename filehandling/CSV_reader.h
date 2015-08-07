@@ -33,14 +33,14 @@ public:
 
 	void printCSV()
 	{
-			for(csvVector::iterator i = csvData.begin(); i != csvData.end(); ++i)
+		for(csvVector::iterator i = csvData.begin(); i != csvData.end(); ++i)
+		{
+			for(std::vector<std::string>::iterator j = i->begin(); j != i->end(); ++j)
 			{
-				for(std::vector<std::string>::iterator j = i->begin(); j != i->end(); ++j)
-				{
-					std::cout << *j << ",";
-				}
-				std::cout << "\n";
+				std::cout << *j << ",";
 			}
+			std::cout << "\n";
+		}
 	}
 
 	csvVector GetData()
@@ -59,4 +59,3 @@ csvVector csvCfg;
 csvVector csvData;
 csvVector csvText;
 #endif
-// http://technet.microsoft.com/en-us/library/2dzy4k6e(VS.80).aspx
