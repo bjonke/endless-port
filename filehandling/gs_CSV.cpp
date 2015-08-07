@@ -2,6 +2,7 @@
 
 GS_CSV::GS_CSV()
 {
+	std::cout << "Initializing GS_CSV parser..." << std::endl;
 }
 
 bool GS_CSV::GS_readCSV(std::istream &input, std::vector< std::vector<std::string> > &output)
@@ -42,4 +43,9 @@ void GS_CSV::GS_printCSV()
 csvVector GS_CSV::GS_GetData()
 {
 	return csvData;
+}
+
+GS_CSV::~GS_CSV()
+{
+	std::cout << "destructing GS_CSV parser..." << std::endl;
 }
