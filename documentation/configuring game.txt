@@ -1,2 +1,2 @@
-There is a cfg.txt file in the root folder of the game foldler where you can set
+There is a cfg.txt file in the root folder of the game folder where you can set
 the height and width of the game window and also the title of the window.
